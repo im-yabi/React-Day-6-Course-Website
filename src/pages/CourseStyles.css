@@ -1,0 +1,122 @@
+.course-detail {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+  animation: fadeIn 1s ease;
+}
+
+.course-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.course-cover {
+  width: 320px;
+  height: 200px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.course-header-text {
+  flex: 1;
+}
+
+.course-header-text h1 {
+  margin: 0 0 10px;
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.course-header-text p {
+  font-size: 1.05rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.course-price {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 1.1rem;
+}
+
+.new-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.discount {
+  background: #ffeb3b;
+  color: #d84315;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.course-info,
+.course-learn {
+  margin: 25px 0;
+  padding: 20px;
+  background: #f9f9ff;
+  border-radius: 12px;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.course-info h2,
+.course-learn h2 {
+  margin-bottom: 12px;
+  color: #2c3e50;
+}
+
+.course-info ul,
+.course-learn ul {
+  list-style: none;
+  padding: 0;
+}
+
+.course-info li,
+.course-learn li {
+  margin: 8px 0;
+  font-size: 1rem;
+  padding: 6px 0;
+}
+
+.enroll-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.enroll-btn {
+  background: linear-gradient(45deg, #3498db, #2ecc71);
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.enroll-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
